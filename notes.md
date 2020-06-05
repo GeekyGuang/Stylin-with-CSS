@@ -6,3 +6,5 @@
 - <abbr title="As soon as possible">ASAP</abbr>  // 下划线，鼠标hover显示title
 - <strong>absolutely critical</strong> // 加粗
 - <em>everyone</em>  // 斜体
+- 文档对象模型（Document Object Model， DOM）
+
