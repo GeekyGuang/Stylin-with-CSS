@@ -67,4 +67,42 @@ h2 ~ p {color: red;}
    下例：a 不是 section的子元素，而是孙子及后代
 */
 section * a {color: red;}
+
+/* 类选择器 .
+*/
+.specialtext {font-style: italic;} 
+p.specialtext {color: red;} 
+p.specialtext span {font-weight: bold;}
+
+/* ID选择器 #
+*/
+#specialtext {font-style: italic;} 
+p#specialtext {color: red;} 
+
 ```
+
+- 多类选择器
+```html
+<!-- 以空格分隔多个类名 -->
+<p class="one two three">hello world</p>
+```
+```css
+/* 选择同时存在多个类名的元素 */
+.one.two.three {font-size: 120%;}
+```
+
+- 用于页内导航的ID
+```html
+<h2 id="bio">hello world</h2>
+<a href="#">#占位符,定位到页首</a>  <!-- 返回顶部 -->
+<a href="#bio">定位到页内ID</a>
+
+```
+
+- 什么时候使用ID和类
+> ID表示的是页面中一个唯一的HTML元素，一个ID只能出现一次。
+  给每个顶级区域都添加一个ID，从而得到非常明确的上下文。
+> 
+
+
+
