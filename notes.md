@@ -102,7 +102,40 @@ p#specialtext {color: red;}
 - 什么时候使用ID和类
 > ID表示的是页面中一个唯一的HTML元素，一个ID只能出现一次。
   给每个顶级区域都添加一个ID，从而得到非常明确的上下文。
-> 
+> 类的的是为了标识一组具有相同特征的元素，
+
+- 属性选择符
+```css
+/* 选择有title属性的元素 */
+img[title] {border: 1px solid red;}
+
+/* 选择制定属性值的元素 */
+img[title="red flower"] {border: 1px solid red;} /*属性值的引号可省略*/
+```
+
+- 伪类
+> 在某些事件发生时, 改变某些元素的样式，比如用户鼠标悬停在一个链接上。就要靠伪类来实现.
+```css
+/* 1. UI(user interface用户界面)伪类
+*/
+
+a:link {color: black;}  /* 等待被点击 */
+a:visited {color: gray;} /* 鼠标点击过了 */
+a:hover {text-decoration: none;} /* 鼠标悬浮 , 可以用在其他元素上 */ 
+a:active {color:red;} /* 鼠标正在点击的时候 */
+
+e:focus {border: 1px solid red;} /* 获取焦点时 e指任何元素 */
+
+e:target {background: #eee;}  /* e是页面中被a标签href指定的元素 */
+#blog:target {background: #eee;} /* <a href="#blog">Link</a> 当点击a标签时, #blog背景变成灰色 */
 
 
+/* 2. 结构化伪类
+  代表一组同胞元素中的第n个元素，
+*/
+
+ol.results li:first-child {color: red;}
+ol.results li:last-child {color: red;}
+li:nth-child(2) {color: red;}
+```
 

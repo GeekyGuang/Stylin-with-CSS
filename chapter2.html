@@ -6,12 +6,22 @@
         <style>
             /*CSS 规则放在<style>标签中 */
             p.specialtext span{color: red;}
+            img[alt=fish] {border: 2px solid blue;}
+            a:link {color: black;}
+            a:visited {color: gray;}
+            a:hover {text-decoration: none;}
+            a:active {color:red;}
+
+            #blog:target {background:#eee;}
+            li:nth-child(2) {color: red;}
 
 
         </style>
     </head>
     <body>
         <!-- HTML元素放在<body>标签中 -->
+        <img src="images/fish.jpeg" title="fish" alt="fish" width="100" height="100">
+        <img src="images/fish.jpeg" alt="fish2" width="100" height="100">
         <p id="blog">This text is very important!</p>
         <section>
             <h2 >An H2 Heading</h2>
@@ -26,43 +36,16 @@
         <aside>
             <p>Contextual selectors are <em>very</em> useful!</p>
         </aside>
-        <p>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
-            p<br>
 
-        </p>
+        <ol class="results">
+            <li>My Fast Pony</li>
+            <li>Steady Trotter</li>
+            <li>Slow Ol' Nag</li>
+        </ol>
+        <ol class="other">
+            <li>My Fast Pony</li>
+            <li>Steady Trotter</li>
+            <li>Slow Ol' Nag</li>
+        </ol>
     </body>
 </html>
