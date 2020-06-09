@@ -139,3 +139,25 @@ ol.results li:last-child {color: red;}
 li:nth-child(2) {color: red;}
 ```
 
+- 伪元素
+> 文档中若有实无的元素
+```css
+p::first-letter {font-size:300%}
+p::first-line {font-variant:small-caps;}
+
+/* 在元素前后添加内容 */
+p.age::before {content:"Age: ";}  
+p.age::after {content:" years.";}
+```
+
+- 继承，层叠
+> CSS有些属性可以继承(文本属性)，有些不能继承(border)
+
+- css属性值
+> em 是相对字母M的宽度
+> ex 是相对字母x的高度
+> rgb: red green blue
+> #ff0088 -> #f08 
+> rgb(0, 255, 0)
+> %r, g%, b% -> 100%, 0%, 90%
+> HSL(0, 0%, 0%) 色相，饱和度，亮度

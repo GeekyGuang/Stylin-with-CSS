@@ -15,11 +15,18 @@
             #blog:target {background:#eee;}
             li:nth-child(2) {color: red;}
 
+            p::first-letter {font-size:300%}
+            p::first-line {font-variant:small-caps;}
+
+            p.age::before {content:"Age: ";}
+            p.age::after {content:" years.";}
+
 
         </style>
     </head>
     <body>
         <!-- HTML元素放在<body>标签中 -->
+        <p class="age">25</p>
         <img src="images/fish.jpeg" title="fish" alt="fish" width="100" height="100">
         <img src="images/fish.jpeg" alt="fish2" width="100" height="100">
         <p id="blog">This text is very important!</p>
