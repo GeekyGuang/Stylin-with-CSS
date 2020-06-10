@@ -161,3 +161,61 @@ p.age::after {content:" years.";}
 > rgb(0, 255, 0)
 > %r, g%, b% -> 100%, 0%, 90%
 > HSL(0, 0%, 0%) 色相，饱和度，亮度
+
+
+- 定位
+> 要掌握CSS技术，核心就是要掌握元素定位
+> 可见的页面版式主要由三个属性控制：position属性、display属性和float属性。
+```css
+/* 上右下左 */
+{margin-top: 5px; margin-right: 10px; margin-bottom: 12px; margin-left: 8px;}
+/*如果哪个值没有写， 那就使用对边的值。*/
+{margin: 5px 10px 12px}  
+{margin: 5px 10px }  /*对边相同*/
+{margin: 5px} /*四边相同*/
+
+/* 三种粒度 */
+{border: 4px solid red;} /* 先给4条边设置相同的样式 */ 
+{border-left-width: 1px;} /* 修改左边框宽度 */ 
+{border-right: none;} /* 移除右边框 */
+
+/******************************** 
+               border
+ ********************************/
+
+/* 可上右下左四边分别指定 */
+{border-width: thin;}  /* thin, medium, thick */
+{border-style: none;} /* none, hidden, dotted, dashed...*/
+{border-color: #fff;}
+ 
+
+{border: solid red;} /* 不指定宽度，则为medium, 3px(google chrome) */
+
+/*  默认情况下，边框的三个相关属性的值分别为 
+border-width: medium; 默认 3px
+border-style: none; 
+border-color: black;
+*/
+
+{border-width: 4px 1px 1px 4px;}
+{border-width: thin thick medium thin;} 
+{border-style: dashed solid;}
+
+/******************************** 
+      padding & margin
+ ********************************/
+
+ {padding: 10px;} /* 内容的宽度没变，但是盒子的宽度增加了 */
+
+ * {margin:0; padding:0;} /* 去掉默认样式 */
+
+ /* 垂直margin会叠加
+    一个margin-top是50， 一个margin-bottom是30， 则两个盒子间距是50
+    水平margin不叠加
+*/
+{margin:.75em 30px;}  /* 上下单位用em, 左右单位用px */
+
+
+
+
+```
