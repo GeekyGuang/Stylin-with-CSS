@@ -215,7 +215,16 @@ border-color: black;
 */
 {margin:.75em 30px;}  /* 上下单位用em, 左右单位用px */
 
-
-
-
 ```
+
+- 盒子的宽度
+> 如果没有指定width，则默认为auto
+> 没有（就是没有设置width的）宽度的元素始终会扩展到填满其父元素的宽度为止。添加水平border、padding和margin，会导致内容宽度减少，减少量等于水平边框、内边距和外边距的和。
+> 为设定了宽度的盒子添加边框、内边距和外边距，会导致盒子扩展得更宽。 
+> 实际上，盒子的width属性设定的只是盒子内容区的宽度，而非盒子要占据的水平宽度。
+```css
+{box-sizing: content-box;}  /* 默认值，width和height为文本内容 */
+{box-sizing: border-box;} /* width和height为文本内容 + padding + border, 注意不包含margin*/
+```
+
+
