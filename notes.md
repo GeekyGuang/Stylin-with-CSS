@@ -148,6 +148,9 @@ p::first-line {font-variant:small-caps;}
 /* 在元素前后添加内容 */
 p.age::before {content:"Age: ";}  
 p.age::after {content:" years.";}
+
+/* :after会在元素内容——而不是元素后面插入一个伪元素。*/
+
 ```
 
 - 继承，层叠
@@ -234,4 +237,45 @@ border-color: black;
 > 浮动之后,后面的元素不再认为它在文档流中, 但会绕过其内容
 > 浮动非图片元素时, 必须指定宽度
 > 分栏布局：将每一栏元素都设为浮动
+> 浮动之后，浮动的元素不再被父元素包围
+```css
+/* 让父元素包围浮动元素的方法 */
+/* 1. 父元素添加 overflow: hidden;
+*/
+section {overflow: hidden;}
+
+/* 2. 父元素添加 float且width 100%
+      父元素后面的元素clear
+*/
+section {float: left; width: 100%;}
+img {float: left}
+footer {clear: left;}
+
+/* 3. 在包含元素最后添加子元素作为清除元素 */
+/* 3.1 最后添加一个div，clear */
+.clear_me {clear: left;}
+
+/* 3.2 给父元素添加clearfix类, 添加after伪元素 */
+.clearfix::after {
+   content: ".";
+   display: block;
+   height: 0;
+   visibility: hidden;
+   clear: both;
+}
+
+/* content也可以为空 */
+.clearfix::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+```
+
+> clear 是将指定元素移动到前面的浮动元素的下方，不用管指定元素与浮动元素是否是同一级
+
+- :before/after与::before/after的区别
+> 前者是CSS2标准，后者是CSS3标准，两者等效
+> A::after, A是after的父元素
+
 

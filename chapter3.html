@@ -16,10 +16,28 @@
 
           body {font-family:helvetica, arial, sans-serif;font-size:1em;margin:0px;background-color:#caebff;}
           p {margin:0 30px; background-color:#fff; width: 400px; padding:0 20px;border:solid red;border-width:0 6px;}
-          */
-
+          
           p {float:left; margin:0; border:1px solid red; width: 200px;}
           img {float: left;margin:0 4px 4px 0; width:100px; height:100px;}
+                    .clearfix::after {
+              content:"";
+              display:block;
+              clear:both;
+          }
+          */
+          img {float:left;width:100px; height:100px;}
+          section {border: 1px solid blue;margin:0 0 10px 0;}
+          p {margin:0;border:1px solid purple;}
+          footer {border:1px solid red;}
+          .clearfix::after {
+              border: 1px solid red;
+              content:".";
+              height: 0;
+              visibility: hidden;
+              display:block;
+              clear: both;
+          }
+
         </style>
     </head>
     <body>
@@ -27,11 +45,17 @@
         <p >Important Warning!</p>
         <p class="warning">Important Warning!</p>
         -->
-        <img src="images/fish.jpeg" />
-        <p>A fragment of code that produces a value is called an expression. Every value that is written literally (such as 22 or "psychoanalysis") is an expression. An expression between parentheses is also an expression, as is a binary operator applied to two expressions or a unary operator applied to one.
-            This shows part of the beauty of a language-based interface. Expressions can contain other expressions in a way similar to how subsentences in human languages are nested—a subsentence can contain its own subsentences, and so on. This allows us to build expressions that describe arbitrarily complex computations. 
-            If an expression corresponds to a sentence fragment, a JavaScript statement corresponds to a full sentence. A program is a list of statements.
-            The simplest kind of statement is an expression with a semicolon after it. This is a program:
-        </p>     
+        <section>
+            <img src="images/fish.jpeg" />
+            <p class="clearfix">Vertical margins between two floated elements on the other hand will not collapse. When applied to floating elements, the margin edge of the bottom element is moved below the margin edge of all relevant floats. This affects the position of later floats, since later floats cannot be positioned higher than earlier ones.</p>
+            <img src="images/fish.jpeg" />
+            <p class="clearfix">It's fun to float.</p>
+            <img src="images/fish.jpeg" />
+            <p class="clearfix">Vertical margins between two floated elements on the other hand will not collapse. When applied to floating elements, the margin edge of the bottom element is moved below the margin edge of all relevant floats. This affects the position of later floats, since later floats cannot be positioned higher than earlier ones.</p>
+        </section>
+        <footer>
+            Here is the footer element that runs across the bottom of the page.
+        </footer>
+     
     </body>
 </html>
