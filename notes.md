@@ -279,3 +279,24 @@ footer {clear: left;}
 > A::after, A是after的父元素
 
 
+- 定位
+> CSS布局的核心是position属性, 对元素盒子应用这个属性，可以相对于它在常规文档流中的位置重新定位。position属性有 4 个值：static、relative、absolute、fixed，默认值为 static。
+```css
+/* relative 相对在文档中的原始位置定位，不脱离文档流
+*/
+{position:relative; top:25px; left:30px;}
+
+/* absolute 绝对定位脱离文档流，相对上下文定位，默认body，会随页面滚动而移动
+   绝对定位元素相对于最近的非 static祖先元素定位。
+   当这样的祖先元素不存在时，则相对于ICB（inital container block, 初始包含块）
+*/
+{position:absolute; top:25px; left:30px;}
+
+/* fixed 固定定位和绝对定位类似，定位上下文是视口，不会随页面滚动而移动
+*/
+{position:fixed; top:25px; left:30px;}
+
+```
+
+
+
