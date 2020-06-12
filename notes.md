@@ -299,4 +299,48 @@ footer {clear: left;}
 ```
 
 
+- display
+```css
+/*默认 为 block*/ 
+p {display: inline;} 
+/*默认 为 inline*/ 
+a {display: block;}
+
+/* 把元素的display设定为none，该元素及所有包含在其中的元素，都不会在页面中显示。它们原先占据的所有空间也都会被“回收”，就好像相关的标记根本不存在一样。
+*/ 
+{display: none;}
+
+/* 只是隐藏元素，但占据的空间仍然保留*/
+{visibility: hidden;} /* 默认是visible */
+
+```
+
+- 背景
+```css
+/* color */
+e {
+   background-color: #fff;  /* 背景色 */
+   color:red;  /* 前景色：文本内容 和 border */
+   border:4px solid;
+}
+
+/* image */
+e {
+   background-image:url(images/bg.png);  /* 默认平铺 repeat*/
+}
+
+e {
+   background-repeat:repeat-x;
+   /* 默认是repeat
+      还有：
+      repeat-x
+      repeat-y
+      no-repeat
+      round 自动调整图片大小以显示完整图片
+      space 填充空白以显示完整图片
+   */
+}
+
+```
+
 
