@@ -4,13 +4,22 @@
         <meta charset="utf-8">
         <title>定位</title>
         <style type="text/css">
+        /*
           p#specialpara {position:fixed; top:25px; left:30px;}
+          */
+        div#outer {position:relative; width:300px; margin:100px 40px; border-top:3px solid red;}
+        div.inner {position: absolute; top:10px; left:20px; background:#ccc;}
         </style>
     </head>
     <body>
+        <div id="outer">
+            <div class="inner">This is text ... </div>
+        </div>
+        <!--
         <p>First Paragraph</p>
         <p>Second Paragraph</p>
         <p id="specialpara">Third Paragraph</p>
         <p>Fourth Paragraph</p>
+        -->
     </body>
 </html>
