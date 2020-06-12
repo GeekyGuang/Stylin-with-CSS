@@ -341,6 +341,55 @@ e {
    */
 }
 
+/* background-position
+   top left bottom right center 两两组合
+*/
+
+{background-position: left center;}  /* 左边居中 */
+{background-position: 10% 50%;}  /* 水平 垂直 */
+/* 在使用关键字和百分比值的情况下，设定的值同时应用于元素和图片。换句话说，如果设定
+   33% 33%，则图片水平33%的位置与元素水平33%的位置对齐。垂直方面也一样。
+*/
+
+{background-position: -10px -20px;} /* 图片左上角与元素左上角距离 */
+
+
+/* background-size
+*/
+{background-size: 100px 50px;}  /* 固定大小 */
+{background-size: 50%;} /* 宽度50%， 高auto */
+{background-size: 20% 30%;} /* 宽 高 */
+{background-size: cover;} /* 填充 保持宽高比 */
+{background-size: contain;} /* 缩放图片，使其与元素等高，保持宽高比 */
+
+
+/* background-attachment
+*/
+{background-attachment: fixed;} /* 默认为scroll，设为fixed使背景不会随元素滚动而滚动 */
+
+
+/* 简写 
+*/
+{background: url(images/aa.jpg) center #fff no-repeat contain fixed;}
+
+
+/* 多层背景
+   先列出的图片显示在上方(前景)
+   背景色在最后
+*/
+
+{
+background: 
+url(images/turq_spiral.png) 30px -10px no-repeat, 
+url(images/pink_spiral.png) 145px 0px no-repeat, 
+url(images/gray_spiral.png) 140px -30px no-repeat, #ffbd75;
+}
+
+```
+
+- 背景渐变
+```css
+
 ```
 
 
