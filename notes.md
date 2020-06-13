@@ -388,7 +388,56 @@ url(images/gray_spiral.png) 140px -30px no-repeat, #ffbd75;
 ```
 
 - 背景渐变
+> 注意：书上的与实际的不符，以mdn为准
 ```css
+/* 默认从上到下 */
+.gradient1 {
+      background:linear-gradient(#e86a43, #fff);
+}
+
+/* 从左到右 */
+.gradient2 {
+      background:linear-gradient(to right, #64d1dd, #fff);
+}
+
+/* 左上到右下 */
+.gradient3 {
+      background:linear-gradient(135deg, #e86a43, #fff);
+}
+
+
+/* 设置渐变点位置
+*/
+.gradient1 {
+      background:linear-gradient(#64d1dd, #fff 50%, #64d1dd);
+}
+.gradient2 {
+      background:linear-gradient(#e86a43, #fff 50%, #e86a43 80%);
+}
+.gradient3 {
+      background:linear-gradient(#64d1dd, #fff 25%, #64d1dd, #fff 75%, #64d1dd);
+}
+.gradient4 {
+      background:linear-gradient(#e86a43, #fff 25%, #64d1dd 25%, #64d1dd 75%, #fff 75%, #e86a43)
+}
+
+/* 放射性渐变
+*/
+/* 默认，根据元素形状而定 */
+.gradient1 {
+      background: -webkit-radial-gradient(#fff, #64d1dd, #70aa25);
+}
+
+/* 圆形 */
+.gradient2 {
+      background: -webkit-radial-gradient(circle, #fff, #64d1dd, #e86a43);
+}
+
+/* 加入圆心位置 */
+.gradient3 {
+      background: -webkit-radial-gradient(50px 30px, circle, #fff, #64d1dd, #4947ba);
+}
+
 
 ```
 
