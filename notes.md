@@ -454,6 +454,15 @@ url(images/gray_spiral.png) 140px -30px no-repeat, #ffbd75;
    cursive
    fantasy
 */
+
+/* 字体大小
+   1em = 16px  (body)
+   em是相对祖先元素的大小
+   rem是相对根元素(html)的大小
+*/
+
+{font-size: 2em;}
+
 ```
 
 
