@@ -441,4 +441,20 @@ url(images/gray_spiral.png) 140px -30px no-repeat, #ffbd75;
 
 ```
 
+- 字体和文本
+> 一个网站的品质如何, 有时候只要看看它用的字体就能一目了然。如果说图片只是蛋糕上的糖衣，那么排版才是卓越设计的根本。
+> 字体能否替代，看“x高度”
+```css
+/* 字体栈 */
+{font-family: "hoefler text", georgia, times, serif;}
+/* 通用字体 
+   serif
+   sans-serif
+   monospace
+   cursive
+   fantasy
+*/
+```
+
+
 
