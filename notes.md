@@ -441,7 +441,7 @@ url(images/gray_spiral.png) 140px -30px no-repeat, #ffbd75;
 
 ```
 
-- 字体和文本
+- 字体
 > 一个网站的品质如何, 有时候只要看看它用的字体就能一目了然。如果说图片只是蛋糕上的糖衣，那么排版才是卓越设计的根本。
 > 字体能否替代，看“x高度”
 ```css
@@ -462,6 +462,74 @@ url(images/gray_spiral.png) 140px -30px no-repeat, #ffbd75;
 */
 
 {font-size: 2em;}
+
+/* 字体样式font-style: oblique italic normal
+   oblique和italic都是斜体
+   等同于html的<em>标签斜体表示强调
+*/
+
+{font-style: italic;}
+
+/* 字体粗细 
+   100 - 900
+   lighter normal bold bolder
+   通常只用normal和bold
+   html用<strong>标签加粗表示重要
+*/
+{font-weight: bold;}
+
+/* 字体变化:
+   small-caps 小型大写字母
+   normal
+*/
+{font-variant: small-caps;}  
+
+
+/* 简写
+*/
+p {font: bold italic small-caps .9em helvetica, arial, sans-serif;}
+
+```
+
+- 文本
+> 文本就像一条蛇
+```css
+/* 文本缩进
+   可以被继承
+   是文本起点到盒子边框的距离
+*/
+{text-indent: -2em;}  /* 给负值会超出盒子 */
+
+/* 字符间距 */
+{letter-spacing: 2em;}  /* 一定要用相对值 */
+
+/* 单词间距 */
+{word-spacing: .2em;} /* 对中文几乎没用 */
+
+/* 文本装饰 */
+{text-decoration: none;}  /* underline, overline, line_through , blink */
+
+/* text-align:
+   left right center justify
+*/
+{text-align: justify;}
+
+
+/* 行高 line-height */
+{line-height: 1.75}  /* 不用指定单位，表示字体大小的倍数 */
+/* 可以在指定字体时指定行高 */
+{font: 1.2em/1.4 helvetica, arial, sans-serif;}
+
+/* 文本转换 
+   uppercase 所有字母大写
+   lowercase 所有字母小写
+   capitalize 首字母大写
+   none
+*/
+{text-transform: capitalize;}
+
+
+/* 垂直对齐 */
 
 ```
 
