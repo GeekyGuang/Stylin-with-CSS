@@ -529,8 +529,18 @@ p {font: bold italic small-caps .9em helvetica, arial, sans-serif;}
 {text-transform: capitalize;}
 
 
-/* 垂直对齐 */
-
+/* 垂直对齐 
+   只影响行内元素
+   使行内元素盒模型与其行内元素容器垂直对齐
+*/
+vertical-align: baseline;
+vertical-align: sub;
+vertical-align: super;
+vertical-align: text-top;
+vertical-align: text-bottom;
+vertical-align: middle;
+vertical-align: top;
+vertical-align: bottom;
 ```
 
 
