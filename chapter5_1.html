@@ -8,8 +8,10 @@
             background:#ffed53;
             width:600px; 
             float:left;
-            padding:10px 20px;
             }
+
+        article .inner {padding:10px 20px;}
+
         nav {width:150px;float:left;}
         nav li {
             /* 去掉列表符号项目 */
@@ -21,6 +23,8 @@
             background:#3f7ccf;
         }
         header {background:#f00;color:white;}
+        nav .inner {padding:10px;}
+        aside .inner {padding:10px;}
         footer {background:#000;clear:both;color:white;text-align:center;}
     </style>
 </head>
@@ -30,21 +34,27 @@
             Hello world!
         </header>
         <nav>
-            <ul>
-                <li>list 1</li>
-                <li>list 2</li>
-                <li>list 3</li>
-            </ul>
+            <div class="inner">
+                <ul>
+                    <li>list 1</li>
+                    <li>list 2</li>
+                    <li>list 3</li>
+                </ul>
+            </div>
         </nav>
         <article>
-            本教程全面介绍 JavaScript 核心语法，覆盖了 ES5 和 DOM 规范的所有内容。
+            <div class="inner">
+                本教程全面介绍 JavaScript 核心语法，覆盖了 ES5 和 DOM 规范的所有内容。
 
-            内容上从最简单的讲起，循序渐进、由浅入深，力求清晰易懂。所有章节都带有大量的代码实例，便于理解和模仿，可以用到实际项目中，即学即用。
-
-            本教程适合初学者当作 JavaScript 语言入门教程，学完后就可以承担实际的网页开发工作，也适合当作日常使用的参考手册。
+                内容上从最简单的讲起，循序渐进、由浅入深，力求清晰易懂。所有章节都带有大量的代码实例，便于理解和模仿，可以用到实际项目中，即学即用。
+    
+                本教程适合初学者当作 JavaScript 语言入门教程，学完后就可以承担实际的网页开发工作，也适合当作日常使用的参考手册。
+            </div>
         </article>
         <aside>
-            从语法角度看，JavaScript 语言是一种“对象模型”语言。各种宿主环境通过这个模型，描述自己的功能和操作接口，从而通过 JavaScript 控制这些功能。但是，JavaScript 并不是纯粹的“面向对象语言”，还支持其他编程范式（比如函数式编程）。这导致几乎任何一个问题，JavaScript 都有多种解决方法。阅读本书的过程中，你会诧异于 JavaScript 语法的灵活性。
+            <div class="inner">
+                从语法角度看，JavaScript 语言是一种“对象模型”语言。各种宿主环境通过这个模型，描述自己的功能和操作接口，从而通过 JavaScript 控制这些功能。但是，JavaScript 并不是纯粹的“面向对象语言”，还支持其他编程范式（比如函数式编程）。这导致几乎任何一个问题，JavaScript 都有多种解决方法。阅读本书的过程中，你会诧异于 JavaScript 语法的灵活性。
+            </div>
         </aside>
         <footer>
             how are you doing?
