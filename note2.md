@@ -10,3 +10,5 @@
 > 每一栏都float
 > 如果布局中的栏是浮动的，而且都设定了宽度，你就根本不要去动它！要动，就把内容放在内部div里，动这个div。
 > 子星选择符：someSelector > * 选择所有子元素 someSelector * 选择所有后代元素
+> * {box-sizing: border-box;}  添加padding和border不改变宽度
+
