@@ -5,10 +5,18 @@
 
 - 应控制布局宽度， 布局高度保持默认auto不变
 
-- 三栏-固定宽度布局
-> 每一栏宽度相加等于外包装宽度
-> 每一栏都float
-> 如果布局中的栏是浮动的，而且都设定了宽度，你就根本不要去动它！要动，就把内容放在内部div里，动这个div。
-> 子星选择符：someSelector > * 选择所有子元素 someSelector * 选择所有后代元素
-> * {box-sizing: border-box;}  添加padding和border不改变宽度
+#### 三栏-固定宽度布局
+- 每一栏宽度相加等于外包装宽度
+- 每一栏都float
+- 如果布局中的栏是浮动的，而且都设定了宽度，你就根本不要去动它！要动，就把内容放在内部div里，动这个div。
+- 子星选择符：`someSelector > *` 选择所有子元素 `someSelector *` 选择所有后代元素
+- `* {box-sizing: border-box;} ` 添加padding和border不改变宽度
+
+#### 三栏-中栏流动布局
+> 中栏宽度会随着浏览器窗口宽度变化而变化
+- `dispaly:table-cell;` 中栏不给宽度, 且各栏不需要float
+
+#### 多行多栏布局
+
+
 
