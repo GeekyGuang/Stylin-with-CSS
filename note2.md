@@ -26,8 +26,9 @@
 ```css
 .list1 li+li {border-top: 1px solid #f00;}
 ```
-
+- 先去掉默认样式很重要
 - display: block 让链接从收缩变成扩张
+- overflow:hidden; 可以包住浮动的子元素
 
 
 
