@@ -22,6 +22,13 @@
 
 
 ### 界面组件
+- 非首位子元素选择器
+```css
+.list1 li+li {border-top: 1px solid #f00;}
+```
+
+- display: block 让链接从收缩变成扩张
+
 
 
 
