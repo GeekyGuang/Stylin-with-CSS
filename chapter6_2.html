@@ -23,6 +23,41 @@
             color: #fff;
             background-color: #aaa;
         }
+
+        .multi_drop_menu a:active {
+            background: #fff;
+            color: #ccc;
+        }
+
+        .multi_drop_menu * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .multi_drop_menu ul {
+            float: left;
+        }
+
+        .multi_drop_menu li {
+            float: left;
+            list-style-type: none;
+            position: relative;
+        }
+
+        .multi_drop_menu li a {
+            display: block;
+            border-right-style: solid;
+            background-clip: padding-box;
+            text-decoration: none;
+        }
+
+        .multi_drop_menu li:last-child a {
+            border-right-style: none;
+        }
+
+        .multi_drop_menu li ul {
+            display: none;
+        }
     </style>
 </head>
 
